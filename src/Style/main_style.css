@@ -3,6 +3,7 @@
 @import url("./content_style.css");
 @import url("./skills_content_style.css");
 @import url("./footer_countainer.css");
+@import url("./error404.css");
 
 * {
   margin: 0;
