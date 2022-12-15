@@ -1,51 +1,60 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import imageLogo from "../assets/DarkProfile.jpg"
+import { Link } from "react-router-dom";
+import imageLogo from "../assets/DarkProfile.jpg";
 
 const Footer = () => {
+  const handleOpenSource = () => {
+    window.open(
+      "https://github.com/yusefbahrami/ALAEDDIN_main_project",
+      "_blank"
+    );
+  };
+  const handleOpenGithub = () => {
+    window.open("https://github.com/yusefbahrami/", "_blank");
+  };
+
   return (
     /* <!-- Footer --> */
     <div className="footer-countainer">
       <div className="footer-content">
         <div className="footer-content-logo">
-          <a href="#">
+          <Link to="#">
             <img src={imageLogo} alt="ALAEDDIN logo" />
-          </a>
+          </Link>
         </div>
         <div className="footer-content-links">
           <ul>
             <div>Communication</div>
             <li>
-              <a
-                href="https://github.com/yusefbahrami/ALAEDDIN_web_new_style"
-                target="_blank"
-              >
-                github
-              </a>
+              <Link onClick={handleOpenGithub}>github</Link>
             </li>
             <li>
-              <a href="#">Telegram</a>
+              <Link onClick={handleOpenSource}>Sources</Link>
             </li>
             <li>
-              <a href="#">Instagram</a>
+              <Link to="#">Telegram</Link>
+            </li>
+            <li>
+              <Link to="#">Instagram</Link>
             </li>
           </ul>
           <ul>
             <div>Personal Website</div>
             <li>
-              <a href="#top">Home</a>
+              <Link to="#top">Home</Link>
             </li>
             <li>
-              <a href="#content-countainer">About Me</a>
+              <Link to="#content-countainer">About Me</Link>
             </li>
             <li>
-              <a href="#skills-content">Abilities</a>
+              <Link to="#skills-content">Abilities</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="footer-content-footer_section">
-        <a href="#">© designed by ALAEDDIN</a>
+        <Link to="/">© designed by ALAEDDIN</Link>
       </div>
     </div>
   );
