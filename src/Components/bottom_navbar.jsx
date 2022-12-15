@@ -1,9 +1,13 @@
-import React, { forwardRef, useEffect, useState } from "react";
+import React, { forwardRef, useContext, useEffect, useState } from "react";
 import ReactDOM, { createPortal } from "react-dom";
 import { Link, Navigate, Route, Routes } from "react-router-dom";
+import { ThemeContext } from "../Context/themeContext";
+import LinkToUser from "./bottom_navbar_sub_components/LinkToUserPanel";
+import Home from "./bottom_navbar_sub_components/ReturnToHome";
+import ScrollToTop from "./bottom_navbar_sub_components/ScrollToTop";
 
 const BottomNavbar = (props, ref) => {
-  const [islight, setIsLight] = useState(false);
+  const { islight, setIsLight } = useContext(ThemeContext);
 
   const handleSeitchTheme = () => {
     setIsLight(!islight);
@@ -15,7 +19,6 @@ const BottomNavbar = (props, ref) => {
       ref.current.className = "main";
     }
   };
-
   useEffect(() => {
     handleSeitchTheme();
   }, []);
@@ -25,43 +28,25 @@ const BottomNavbar = (props, ref) => {
     <div className="nav-countainer">
       <nav className="nav-bar">
         <ul>
-          <li className="nav-item">
-            <Link to="#">
-              <i className="uil uil-user"></i>
-              {/* <img
-                className="user-profile"
-                src="./assets/IMG_20221024_160602_501.jpg"
-                alt="Profile image"
-              /> */}
-              <span>USER</span>
-            </Link>
-          </li>
+          <LinkToUser />
           <li className="nav-item">
             <Link to="#">
               <i className="uil uil-setting"></i>
               <span>SETTING</span>
             </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/">
-              <i className="uil uil-estate"></i>
-              <span>HOME</span>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <i
-              className={islight ? "uil uil-sun" : "uil uil-moon"}
-              id="dark-light"
-              onClick={handleSeitchTheme}
-            ></i>
-            <span>DARK-LIGHT</span>
-          </li>
+          <Home />
           <li className="nav-item">
             <Link>
-              <i className="uil uil-heart"></i>
-              <span>HEART</span>
+              <i
+                className={islight ? "uil uil-sun" : "uil uil-moon"}
+                id="dark-light"
+                onClick={handleSeitchTheme}
+              ></i>
+              <span>DARK-LIGHT</span>
             </Link>
           </li>
+          <ScrollToTop />
         </ul>
       </nav>
     </div>,

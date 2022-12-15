@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext, useRef, useState } from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import BottomNavbar from "./Components/bottom_navbar";
+import Content from "./Components/content";
+import Footer from "./Components/footer";
+import Header from "./Components/header";
+import { ThemeContext } from "./Context/themeContext";
+import "./Style/main_style.css";
 
-function App() {
+const App = () => {
+  const [islight, setIsLight] = useState(false);
+  const mainDiv = useRef();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ThemeContext.Provider value={{ islight, setIsLight }}>
+        <div className="main" id="main" ref={mainDiv}>
+          <span id="top"></span>
+          <Header />
+          <Content />
+          <Footer />
+          <BottomNavbar ref={mainDiv} />
+        </div>
+      </ThemeContext.Provider>
+    </BrowserRouter>
   );
-}
-
+};
 export default App;

@@ -69,11 +69,11 @@ body {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(rgba(68, 68, 68, 20%), rgba(23, 23, 23, 100%)),
-    url("../assets/IMG_20221024_160602_501.jpg") center center/cover fixed;
+    url("../assets/DarkProfile.jpg") center center/cover fixed;
 }
 /* main light */
 .main.light {
   background: linear-gradient(rgba(68, 68, 68, 20%), rgba(239, 255, 253, 100%)),
-    url("../assets/yusef.jpg") center center/cover fixed;
+    url("../assets/LightProfile.jpg") center center/cover fixed;
 }
 /* end main light */

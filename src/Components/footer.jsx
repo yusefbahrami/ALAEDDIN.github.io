@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import imageLogo from "../assets/DarkProfile.jpg"
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-logo">
           <a href="#">
-            <img src="assets/IMG_20221024_160602_501.jpg" alt="ALAEDDIN logo" />
+            <img src={imageLogo} alt="ALAEDDIN logo" />
           </a>
         </div>
         <div className="footer-content-links">

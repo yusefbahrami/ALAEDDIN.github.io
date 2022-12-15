@@ -24,8 +24,8 @@
   font-size: 2rem;
   list-style: none;
 }
-.nav-bar .nav-item a,
-.nav-bar .nav-item *{
+.darkBody .nav-bar .nav-item a,
+.darkBody .nav-bar .nav-item li i{
   text-decoration: none;
   color: #ededed;
   transition: color 0.3s, background-color 0.3s;
@@ -38,7 +38,7 @@
   cursor: pointer;
 }
 
-.nav-bar .nav-item a:hover,.nav-bar .nav-item *:hover {
+.darkBody .nav-bar .nav-item a:hover,.darkBody .nav-bar .nav-item li i:hover {
   color: #da0037;
 }
 
@@ -57,18 +57,18 @@
 }
 
 /* Light */
-.main.light .nav-bar {
+.lightBody .nav-bar {
   background-color: #effffd;
   box-shadow: 0 0 0.2rem #42c2ff;
 }
 
-.main.light .nav-bar .nav-item a {
+.lightBody .nav-bar .nav-item a {
   color: #85f4ff;
 }
-.main.light .nav-bar .nav-item a:hover {
+.lightBody .nav-bar .nav-item a:hover {
   color: #42c2ff;
 }
-.main.light .nav-bar .nav-item a .user-profile:hover {
+.lightBody .nav-bar .nav-item a .user-profile:hover {
   box-shadow: 0 0 0.2rem #42c2ff;
 }
 /* End Light */
