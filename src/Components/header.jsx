@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import darkImageProfile from "../assets/DarkProfile.jpg";
 import lightImageProfile from "../assets/LightProfile.jpg";
