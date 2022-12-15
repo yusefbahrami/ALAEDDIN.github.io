@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
+
+.header-countainer {
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+}
+.header-countainer .profile-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.header-countainer .profile-box .profile-box-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-countainer
+  .profile-box
+  .profile-box-image
+  .profile-image-route
+  .profile-image {
+  width: 40rem;
+  height: 40rem;
+  border-radius: 50%;
+  box-shadow: 0 0 2rem #da0037;
+  transition: box-shadow 0.3s;
+}
+.header-countainer
+  .profile-box
+  .profile-box-image
+  .profile-image-route
+  .profile-image:hover {
+  box-shadow: 0 0 2.8rem #da0037;
+}
+.header-countainer .profile-box .profile-box-description {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-countainer
+  .profile-box
+  .profile-box-description
+  .profile-box-inner-description {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #ededed;
+  /* font-size: 1.2rem; */
+  font-family: "Alexandria", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.header-countainer
+  .profile-box
+  .profile-box-description
+  .profile-box-inner-description
+  .profile-title {
+  /* font-size: 4rem; */
+  font-size: 5.5rem;
+
+  font-family: "Alexandria", sans-serif;
+  font-weight: 200;
+  color: #da0037;
+}
+
+/* Light */
+.main.light
+  .header-countainer
+  .profile-box
+  .profile-box-image
+  .profile-image-route
+  .profile-image {
+  box-shadow: 0 0 2rem #42c2ff;
+}
+.main.light
+  .header-countainer
+  .profile-box
+  .profile-box-image
+  .profile-image-route
+  .profile-image:hover {
+  box-shadow: 0 0 2.8rem #42c2ff;
+}
+.main.light
+  .header-countainer
+  .profile-box
+  .profile-box-description
+  .profile-box-inner-description {
+  color: #42c2ff;
+  font-weight: 300;
+}
+.main.light
+  .header-countainer
+  .profile-box
+  .profile-box-description
+  .profile-box-inner-description
+  .profile-description {
+  text-shadow: 0 0 1rem #ededed;
+}
+.main.light
+  .header-countainer
+  .profile-box
+  .profile-box-description
+  .profile-box-inner-description
+  .profile-title {
+  color: #42c2ff;
+}
+/* End Light */
+
+@media screen and (max-width: 1660px) {
+  .header-countainer
+    .profile-box
+    .profile-box-image
+    .profile-image-route
+    .profile-image {
+    width: 40rem;
+    height: 40rem;
+  }
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description {
+    font-size: 2rem;
+  }
+
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description
+    .profile-title {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .header-countainer
+    .profile-box
+    .profile-box-image
+    .profile-image-route
+    .profile-image {
+    width: 30rem;
+    height: 30rem;
+  }
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description {
+    font-size: 1.5rem;
+  }
+
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description
+    .profile-title {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description
+    .profile-title {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 930px) {
+  .header-countainer
+    .profile-box
+    .profile-box-image
+    .profile-image-route
+    .profile-image {
+    width: 25rem;
+    height: 25rem;
+  }
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description {
+    font-size: 1rem;
+  }
+
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description
+    .profile-title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 764px) {
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description {
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-countainer
+    .profile-box
+    .profile-box-image
+    .profile-image-route
+    .profile-image {
+    width: 18rem;
+    height: 18rem;
+  }
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description
+    .profile-title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header-countainer .profile-box {
+    flex-direction: column;
+  }
+  .header-countainer
+    .profile-box
+    .profile-box-image
+    .profile-image-route
+    .profile-image {
+    width: 20rem;
+    height: 20rem;
+  }
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description
+    .profile-title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .header-countainer .profile-box {
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header-countainer
+    .profile-box
+    .profile-box-image
+    .profile-image-route
+    .profile-image {
+    width: 18rem;
+    height: 18rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header-countainer .profile-box {
+    gap: 0;
+  }
+  .header-countainer
+    .profile-box
+    .profile-box-image
+    .profile-image-route
+    .profile-image {
+    width: 16rem;
+    height: 16rem;
+  }
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description {
+    font-size: 0.8rem;
+  }
+
+  .header-countainer
+    .profile-box
+    .profile-box-description
+    .profile-box-inner-description
+    .profile-title {
+    font-size: 2.5rem;
+  }
+}
