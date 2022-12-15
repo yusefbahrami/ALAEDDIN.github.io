@@ -1,5 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
-import ReactDOM from "react-dom";
+import React, { useRef, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import BottomNavbar from "./Components/bottom_navbar";
 import Content from "./Components/content";
