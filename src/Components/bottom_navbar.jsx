@@ -23,8 +23,7 @@ const BottomNavbar = (props, ref) => {
     handleSeitchTheme();
   }, []);
 
-  return createPortal(
-    /* <!-- Navbar --> */
+  return (
     <div className="nav-countainer">
       <nav className="nav-bar">
         <ul>
@@ -49,8 +48,7 @@ const BottomNavbar = (props, ref) => {
           <ScrollToTop />
         </ul>
       </nav>
-    </div>,
-    document.getElementById("nav-portal")
+    </div>
   );
 };
 export default forwardRef(BottomNavbar);
