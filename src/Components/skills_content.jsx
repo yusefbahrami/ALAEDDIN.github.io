@@ -1,10 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import { Link } from "react-router-dom";
 const SkillsContent = () => {
   return (
     <div className="skills-content" id="skills-content">
       <div className="skill-description">
-        <a href="#" className="skill-route">
+        <Link href="#" className="skill-route">
           <div className="skill-description-title">
             <i className="uil uil-heart"></i>
             <h3 className="skill-description-inner-title">Title</h3>
@@ -19,10 +19,10 @@ const SkillsContent = () => {
               eligendi!
             </p>
           </div>
-        </a>
+        </Link>
       </div>
       <div className="skill-description">
-        <a href="#" className="skill-route">
+        <Link href="#" className="skill-route">
           <div className="skill-description-title">
             <i className="uil uil-heart"></i>
             <h3 className="skill-description-inner-title">Title</h3>
@@ -37,10 +37,10 @@ const SkillsContent = () => {
               eligendi!
             </p>
           </div>
-        </a>
+        </Link>
       </div>
       <div className="skill-description">
-        <a href="#" className="skill-route">
+        <Link href="#" className="skill-route">
           <div className="skill-description-title">
             <i className="uil uil-heart"></i>
             <h3 className="skill-description-inner-title">Title</h3>
@@ -55,10 +55,10 @@ const SkillsContent = () => {
               eligendi!
             </p>
           </div>
-        </a>
+        </Link>
       </div>
       <div className="skill-description">
-        <a href="#" className="skill-route">
+        <Link href="#" className="skill-route">
           <div className="skill-description-title">
             <i className="uil uil-heart"></i>
             <h3 className="skill-description-inner-title">Title</h3>
@@ -73,7 +73,7 @@ const SkillsContent = () => {
               eligendi!
             </p>
           </div>
-        </a>
+        </Link>
       </div>
     </div>
   );
