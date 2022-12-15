@@ -113,9 +113,12 @@
 }
 
 .main.light .footer-countainer .footer-content-footer_section * {
-  color: #b8fff9;
+  /* color: #b8fff9; */
+  color: #effffd;
 }
 .main.light .footer-countainer .footer-content-footer_section a:hover {
+  /* border-bottom: 2px solid #b8fff9; */
+  color: #b8fff9;
   border-bottom: 2px solid #b8fff9;
 }
 /* End Light */
