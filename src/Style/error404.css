@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
+
+.error-countainer {
+  color: #da0037;
+  text-align: center;
+  font-family: "Alexandria", sans-serif;
+  font-weight: 200;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.error-countainer span {
+  font-size: 15rem;
+  font-weight: 300;
+}
+.error-countainer .error-desciption-countainer {
+  text-align: left;
+}
+.error-countainer .error-title {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+.error-countainer span,
+.error-countainer .error-title,
+.error-countainer .error-description {
+  background: url("../assets/Error404_background.png");
+  background-position: center;
+  background-size: cover;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.error-countainer .error-description {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width:374px) {
+    .error-countainer .error-title {
+        font-size: 3rem;
+      }
+}
