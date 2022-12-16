@@ -6,8 +6,9 @@ const SkillsContent = () => {
       <div className="skill-description">
         <Link href="#" className="skill-route">
           <div className="skill-description-title">
-            <i className="uil uil-heart"></i>
-            <h3 className="skill-description-inner-title">Title</h3>
+            {/* <i class="uil uil-java-script icon"></i> */}
+            <i class="devicon-nodejs-plain icon"></i>
+            <h3 className="skill-description-inner-title">Javascript</h3>
           </div>
           <div className="skill-description-text">
             <p className="skill-description-inner-text">
@@ -24,8 +25,8 @@ const SkillsContent = () => {
       <div className="skill-description">
         <Link href="#" className="skill-route">
           <div className="skill-description-title">
-            <i className="uil uil-heart"></i>
-            <h3 className="skill-description-inner-title">Title</h3>
+            <i class="devicon-python-plain  icon"></i>
+            <h3 className="skill-description-inner-title">Python</h3>
           </div>
           <div className="skill-description-text">
             <p className="skill-description-inner-text">
@@ -42,8 +43,9 @@ const SkillsContent = () => {
       <div className="skill-description">
         <Link href="#" className="skill-route">
           <div className="skill-description-title">
-            <i className="uil uil-heart"></i>
-            <h3 className="skill-description-inner-title">Title</h3>
+            {/* <i className="uil uil-heart icon"></i> */}
+            <i class="devicon-react-original icon"></i>
+            <h3 className="skill-description-inner-title">React js</h3>
           </div>
           <div className="skill-description-text">
             <p className="skill-description-inner-text">
@@ -60,8 +62,8 @@ const SkillsContent = () => {
       <div className="skill-description">
         <Link href="#" className="skill-route">
           <div className="skill-description-title">
-            <i className="uil uil-heart"></i>
-            <h3 className="skill-description-inner-title">Title</h3>
+            <i class="devicon-photoshop-line icon"></i>
+            <h3 className="skill-description-inner-title">Photoshop</h3>
           </div>
           <div className="skill-description-text">
             <p className="skill-description-inner-text">
