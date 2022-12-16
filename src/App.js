@@ -14,13 +14,13 @@ const App = () => {
   return (
     <BrowserRouter>
       <ThemeContext.Provider value={{ islight, setIsLight }}>
-        <div className="main" id="main" ref={mainDiv}>
+        <main className="main" id="main" ref={mainDiv}>
           <span id="top"></span>
           <Header />
           <Content />
           <Footer />
           <BottomNavbar ref={mainDiv} />
-        </div>
+        </main>
       </ThemeContext.Provider>
     </BrowserRouter>
   );
