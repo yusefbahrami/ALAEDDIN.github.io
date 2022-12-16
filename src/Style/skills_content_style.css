@@ -75,6 +75,11 @@
 }
 /* end light */
 
+@media screen and (max-width: 950px) {
+  .skill-description-title .skill-description-inner-title {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 765px) {
   .skills-content {
     grid-template-columns: repeat(1, 1fr);
@@ -87,5 +92,16 @@
   }
   .skill-description-title .skill-description-inner-title {
     font-size: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .skill-description-title .icon {
+    font-size: 2rem;
+  }
+  .skill-description-title .skill-description-inner-title {
+    font-size: 1.5rem;
+  }
+  .skill-description-inner-text {
+    font-size: 1rem;
   }
 }
