@@ -24,8 +24,9 @@
   font-size: 2rem;
   list-style: none;
 }
-.darkBody .nav-bar .nav-item a,
-.darkBody .nav-bar .nav-item li i{
+
+.nav-bar .nav-item a,
+.darkBody .nav-bar .nav-item li i {
   text-decoration: none;
   color: #ededed;
   transition: color 0.3s, background-color 0.3s;
@@ -38,10 +39,10 @@
   cursor: pointer;
 }
 
-.darkBody .nav-bar .nav-item a:hover,.darkBody .nav-bar .nav-item li i:hover {
+.darkBody .nav-bar .nav-item a:hover,
+.darkBody .nav-bar .nav-item li i:hover {
   color: #da0037;
 }
-
 .nav-bar .nav-item a .user-profile {
   width: 2rem;
   height: 2rem;
