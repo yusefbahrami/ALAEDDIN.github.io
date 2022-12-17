@@ -1,16 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import userProfile from "../../assets/DarkProfile.jpg";
 
 const LinkToUser = () => {
   return (
     <li className="nav-item">
       <Link to="#">
-        <i className="uil uil-user"></i>
-        {/* <img
-        className="user-profile"
-        src="./assets/IMG_20221024_160602_501.jpg"
-        alt="Profile image"
-      /> */}
+        {/* <i className="uil uil-user"></i> */}
+        <img className="user-profile" src={userProfile} alt="Profile image" />
         <span>USER</span>
       </Link>
     </li>
