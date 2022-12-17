@@ -18,6 +18,7 @@ const BottomNavbar = (props, ref) => {
       ref.current.className = "main";
     }
   };
+
   useEffect(() => {
     handleSeitchTheme();
   }, []);
