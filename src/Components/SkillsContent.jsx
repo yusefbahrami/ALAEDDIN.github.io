@@ -21,6 +21,24 @@ const SkillsContent = () => {
           </div>
         </Link>
       </div>
+      <div className="skill-description react">
+        <Link to="#" className="skill-route">
+          <div className="skill-description-title">
+            <i className="devicon-react-original icon"></i>
+            <h3 className="skill-description-inner-title">React js</h3>
+          </div>
+          <div className="skill-description-text">
+            <p className="skill-description-inner-text">
+              Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Corporis illum cumque, dolorum
+              voluptatum voluptatem culpa inventore, minima exercitationem
+              provident quo error in laborum necessitatibus aliquam eos
+              voluptatibus, eius aliquid obcaecati!adipisicing elit. Impedit,
+              eligendi!
+            </p>
+          </div>
+        </Link>
+      </div>
       <div className="skill-description typescript">
         <Link to="#" className="skill-route">
           <div className="skill-description-title">
@@ -39,11 +57,11 @@ const SkillsContent = () => {
           </div>
         </Link>
       </div>
-      <div className="skill-description react">
+      <div className="skill-description Solidity">
         <Link to="#" className="skill-route">
           <div className="skill-description-title">
-            <i className="devicon-react-original icon"></i>
-            <h3 className="skill-description-inner-title">React js</h3>
+            <i className="devicon-typescript-plain icon"></i>
+            <h3 className="skill-description-inner-title">Solidity</h3>
           </div>
           <div className="skill-description-text">
             <p className="skill-description-inner-text">
