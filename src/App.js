@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
-import BottomNavbar from "./Components/bottom_navbar";
-import Content from "./Components/content";
-import Footer from "./Components/footer";
-import Header from "./Components/header";
+import BottomNavbar from "./Components/BottomNavbar";
+import Content from "./Components/Content";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 import { ThemeContext } from "./Context/themeContext";
 import "./Style/main_style.css";
 

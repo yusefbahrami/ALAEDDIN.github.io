@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import AboutDescription from "./about_description";
-import SkillsContent from "./skills_content";
+import AboutDescription from "./AboutDescription";
+import SkillsContent from "./SkillsContent";
 
 const Main = () => {
   return (
