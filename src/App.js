@@ -8,7 +8,7 @@ import { ThemeContext } from "./Context/themeContext";
 import "./Style/main_style.css";
 
 const App = () => {
-  const [islight, setIsLight] = useState(false);
+  const [islight, setIsLight] = useState(true);
   const mainDiv = useRef();
 
   return (
