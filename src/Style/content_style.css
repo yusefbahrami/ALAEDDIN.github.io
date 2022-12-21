@@ -69,11 +69,6 @@ hr {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 1240px) {
-  .about-description .about-description-title {
-    font-size: 4rem;
-  }
-}
 @media screen and (max-width: 930px) {
   .about-description .about-description-title {
     font-size: 3rem;
