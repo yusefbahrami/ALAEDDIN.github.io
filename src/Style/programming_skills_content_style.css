@@ -2,11 +2,23 @@
 
 .skills-content {
   width: 100%;
-  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 2rem;
+  text-align: left;
+}
+.programming-skill-title {
+  font-size: 4rem;
+  color: #da0037;
+  font-family: "Alexandria", sans-serif;
+  font-weight: 200;
+}
+.programming-skill-content {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  /* grid-template-columns: repeat(2, auto); */
-  /* grid-template-rows: repeat(2, 1fr); */
   gap: 2rem;
 }
 .skill-description {
@@ -45,22 +57,22 @@
   color: #da0037;
 }
 
-.skill-description.javascript{
+.skill-description.javascript {
   grid-column: span 3;
 }
-.skill-description.react{
+.skill-description.react {
   grid-column: span 3;
 }
-.skill-description.typescript{
+.skill-description.typescript {
   grid-column: span 2;
 }
-.skill-description.Solidity{
+.skill-description.Solidity {
   grid-column: span 2;
 }
-.skill-description.python{
+.skill-description.python {
   grid-column: span 2;
 }
-.skill-description.photoshop{
+.skill-description.photoshop {
   grid-column: span 6;
 }
 
@@ -96,42 +108,57 @@
 /* end light */
 
 @media screen and (max-width: 1326px) {
-  .skills-content {
+  .programming-skill-content {
     grid-template-columns: repeat(2, 1fr);
   }
-  .skill-description.javascript{
+  .skill-description.javascript {
     grid-column: span 1;
   }
-  .skill-description.react{
+  .skill-description.react {
     grid-column: span 1;
   }
-  .skill-description.typescript{
+  .skill-description.typescript {
     grid-column: span 1;
   }
-  .skill-description.Solidity{
+  .skill-description.Solidity {
     grid-column: span 1;
   }
-  .skill-description.python{
+  .skill-description.python {
     grid-column: span 2;
   }
-  .skill-description.photoshop{
+  .skill-description.photoshop {
     grid-column: span 2;
   }
 }
+@media screen and (max-width: 1660px) {
+  .programming-skill-title {
+    font-size: 5.5rem;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .programming-skill-title {
+    font-size: 4rem;
+  }
+}
 @media screen and (max-width: 950px) {
+  .programming-skill-title {
+    font-size: 3rem;
+  }
   .skill-description-title .skill-description-inner-title {
     font-size: 2rem;
   }
 }
 @media screen and (max-width: 765px) {
-  .skills-content {
+  .programming-skill-content {
     grid-template-columns: repeat(1, 1fr);
-    /* grid-template-rows: repeat(4, 1fr); */
   }
-  .skill-description.python{
+  .programming-skill-title {
+    font-size: 2.5rem;
+  }
+  .skill-description.python {
     grid-column: span 1;
   }
-  .skill-description.photoshop{
+  .skill-description.photoshop {
     grid-column: span 1;
   }
 }
@@ -144,6 +171,9 @@
   }
 }
 @media screen and (max-width: 375px) {
+  .programming-skill-title {
+    font-size: 2rem;
+  }
   .skill-description-title .icon {
     font-size: 2rem;
   }
