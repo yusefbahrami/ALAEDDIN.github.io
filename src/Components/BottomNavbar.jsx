@@ -1,4 +1,4 @@
-import React, { forwardRef, useContext, useEffect } from "react";
+import React, { forwardRef, useContext } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../Context/themeContext";
 import LinkToUser from "./bottom_navbar_sub_components/LinkToUserPanel";
