@@ -8,7 +8,7 @@ const SkillsContent = () => {
         <div className="skill-description javascript">
           <Link to="#" className="skill-route">
             <div className="skill-description-title">
-              <i className="devicon-nodejs-plain icon"></i>
+              <i class="devicon-javascript-plain icon"></i>
               <h3 className="skill-description-inner-title">Javascript</h3>
             </div>
             <div className="skill-description-text">
@@ -96,11 +96,11 @@ const SkillsContent = () => {
           </Link>
         </div>
 
-        <div className="skill-description photoshop">
+        <div className="skill-description C-sharp">
           <Link to="#" className="skill-route">
             <div className="skill-description-title">
-              <i className="devicon-photoshop-line icon"></i>
-              <h3 className="skill-description-inner-title">Photoshop</h3>
+              <i className="devicon-csharp-plain icon"></i>
+              <h3 className="skill-description-inner-title">C#</h3>
             </div>
             <div className="skill-description-text">
               <p className="skill-description-inner-text">
