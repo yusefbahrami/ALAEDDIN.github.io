@@ -4,6 +4,7 @@
 @import url("./skills_content_style.css");
 @import url("./footer_countainer.css");
 @import url("./error404.css");
+@import url("./swal2_style.css");
 
 * {
   margin: 0;
