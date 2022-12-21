@@ -92,6 +92,9 @@
   font-weight: 400;
 }
 /* light */
+.main.light .programming-skill-title {
+  color: #42c2ff;
+}
 .main.light .skill-description {
   box-shadow: 0 0 0.2rem #42c2ff;
 }
