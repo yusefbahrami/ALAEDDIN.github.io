@@ -15,7 +15,6 @@ const App = () => {
     <BrowserRouter>
       <ThemeContext.Provider value={{ islight, setIsLight }}>
         <main className="main" id="main" ref={mainDiv}>
-          <span id="top"></span>
           <Header />
           <Content />
           <Footer />
