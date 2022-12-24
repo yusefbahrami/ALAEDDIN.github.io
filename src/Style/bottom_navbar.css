@@ -39,6 +39,9 @@
   cursor: pointer;
 }
 
+.darkBody .nav-bar .nav-item a.active_nav {
+  color: #da0037;
+}
 .darkBody .nav-bar .nav-item a:hover,
 .darkBody .nav-bar .nav-item li i:hover {
   color: #da0037;
@@ -65,6 +68,9 @@
 
 .lightBody .nav-bar .nav-item a {
   color: #85f4ff;
+}
+.lightBody .nav-bar .nav-item a.active_nav {
+  color: #42c2ff;
 }
 .lightBody .nav-bar .nav-item a:hover {
   color: #42c2ff;
