@@ -1,13 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
     <li className="nav-item">
-      <Link to={"/"}>
+      <NavLink
+        to={"/"}
+        className={({ isActive }) => {
+          return isActive ? "active_nav" : "";
+        }}
+      >
         <i className="uil uil-estate"></i>
         <span>HOME</span>
-      </Link>
+      </NavLink>
     </li>
   );
 };
