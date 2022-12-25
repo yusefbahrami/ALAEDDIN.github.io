@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400&family=Lato&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap');
 .content-countainer {
   background-color: #171717;
   color: #ededed;
@@ -29,7 +29,8 @@ hr {
   font-weight: 200;
 }
 .about-description .about-description-text {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
   letter-spacing: 1px;
@@ -57,8 +58,8 @@ hr {
     font-size: 5.5rem;
   }
   .about-description .about-description-text {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.3rem;
+    /* line-height: 3rem; */
   }
 }
 @media screen and (max-width: 1366px) {
@@ -66,7 +67,7 @@ hr {
     font-size: 4rem;
   }
   .about-description .about-description-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 930px) {
@@ -75,7 +76,7 @@ hr {
   }
   .about-description .about-description-text {
     font-size: 1rem;
-    line-height: 2rem;
+    /* line-height: 2rem; */
   }
 }
 @media screen and (max-width: 764px) {
