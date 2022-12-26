@@ -1,12 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const SkillsContent = () => {
   return (
     <div className="skills-content" id="skills-content">
       <h2 className="programming-skill-title">Programming</h2>
       <div className="programming-skill-content">
         <div className="skill-description javascript">
-          <Link to="#" className="skill-route">
+          <NavLink to="#" className="skill-route">
             <div className="skill-description-title">
               <i className="devicon-javascript-plain icon"></i>
               <h3 className="skill-description-inner-title">Javascript</h3>
@@ -21,10 +21,10 @@ const SkillsContent = () => {
                 elit. Impedit, eligendi!
               </p>
             </div>
-          </Link>
+          </NavLink>
         </div>
         <div className="skill-description react">
-          <Link to="#" className="skill-route">
+          <NavLink to="#" className="skill-route">
             <div className="skill-description-title">
               <i className="devicon-react-original icon"></i>
               <h3 className="skill-description-inner-title">React js</h3>
@@ -39,10 +39,10 @@ const SkillsContent = () => {
                 elit. Impedit, eligendi!
               </p>
             </div>
-          </Link>
+          </NavLink>
         </div>
         <div className="skill-description typescript">
-          <Link to="#" className="skill-route">
+          <NavLink to="#" className="skill-route">
             <div className="skill-description-title">
               <i className="devicon-typescript-plain icon"></i>
               <h3 className="skill-description-inner-title">Typescript</h3>
@@ -57,10 +57,10 @@ const SkillsContent = () => {
                 elit. Impedit, eligendi!
               </p>
             </div>
-          </Link>
+          </NavLink>
         </div>
         <div className="skill-description Solidity">
-          <Link to="#" className="skill-route">
+          <NavLink to="#" className="skill-route">
             <div className="skill-description-title">
               <i className="devicon-solidity-plain icon"></i>
               <h3 className="skill-description-inner-title">Solidity</h3>
@@ -75,10 +75,10 @@ const SkillsContent = () => {
                 elit. Impedit, eligendi!
               </p>
             </div>
-          </Link>
+          </NavLink>
         </div>
         <div className="skill-description python">
-          <Link to="#" className="skill-route">
+          <NavLink to="#" className="skill-route">
             <div className="skill-description-title">
               <i className="devicon-python-plain  icon"></i>
               <h3 className="skill-description-inner-title">Python</h3>
@@ -93,11 +93,11 @@ const SkillsContent = () => {
                 elit. Impedit, eligendi!
               </p>
             </div>
-          </Link>
+          </NavLink>
         </div>
 
         <div className="skill-description C-sharp">
-          <Link to="#" className="skill-route">
+          <NavLink to="#" className="skill-route">
             <div className="skill-description-title">
               <i className="devicon-csharp-plain icon"></i>
               <h3 className="skill-description-inner-title">C#</h3>
@@ -112,7 +112,7 @@ const SkillsContent = () => {
                 elit. Impedit, eligendi!
               </p>
             </div>
-          </Link>
+          </NavLink>
         </div>
       </div>
     </div>
