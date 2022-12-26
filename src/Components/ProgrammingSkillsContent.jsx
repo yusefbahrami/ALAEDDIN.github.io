@@ -62,7 +62,7 @@ const SkillsContent = () => {
         <div className="skill-description Solidity">
           <Link to="#" className="skill-route">
             <div className="skill-description-title">
-              <i className="devicon-typescript-plain icon"></i>
+              <i className="devicon-solidity-plain icon"></i>
               <h3 className="skill-description-inner-title">Solidity</h3>
             </div>
             <div className="skill-description-text">
