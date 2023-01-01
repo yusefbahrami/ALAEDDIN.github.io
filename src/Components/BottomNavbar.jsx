@@ -66,6 +66,11 @@ const BottomNavbar = (props, ref) => {
       color: `${islight ? "#da0037" : "#42c2ff"}`,
     });
   };
+
+  const handleTest = async () => {
+    const battery=await navigator.locks
+    console.log(battery);
+  };
   // End test
   console.log(ref);
   return (
@@ -73,7 +78,7 @@ const BottomNavbar = (props, ref) => {
       <nav className="nav-bar">
         <ul>
           <LinkToUser />
-          <li className="nav-item" onClick={handleShowToast}>
+          <li className="nav-item" onClick={handleTest}>
             <Link to="#">
               <i className="uil uil-setting"></i>
               <span>SETTING</span>
