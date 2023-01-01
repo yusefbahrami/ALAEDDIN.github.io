@@ -7,7 +7,7 @@ const LinkToUser = () => {
     <li className="nav-item">
       <Link to="#">
         {/* <i className="uil uil-user"></i> */}
-        <img className="user-profile" src={userProfile} alt="Profile image" />
+        <img className="user-profile" src={userProfile} alt="Profile" />
         <span>USER</span>
       </Link>
     </li>
