@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
-import { Link, Route, Routes } from "react-router-dom";
-import Error404 from "./Error404";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Error404 from "./Error/Error404";
 import Main from "./MainPageComponent";
 
 const Content = () => {
