@@ -1,10 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const Music = (props) => {
+const Music = () => {
   return (
-    <li className="nav-item" onClick={props.handleShowToast}>
-      <NavLink to={"#"}>
+    <li className="nav-item">
+      <NavLink to={"/music-list"}>
         <i className="uil uil-headphones"></i>
         <span>SETTING</span>
       </NavLink>
