@@ -1,10 +1,11 @@
-import React, { forwardRef, useContext, useEffect, useState } from "react";
+import React, { forwardRef, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../Context/themeContext";
 import LinkToUser from "./bottom_navbar_sub_components/LinkToUserPanel";
 import Home from "./bottom_navbar_sub_components/ReturnToHome";
 import ScrollToTop from "./bottom_navbar_sub_components/ScrollToTop";
 import Swal from "sweetalert2";
+import SwitchTheme from "./bottom_navbar_sub_components/SwitchTheme";
 
 const BottomNavbar = (props, ref) => {
   const { islight, setIsLight } = useContext(ThemeContext);
@@ -22,7 +23,7 @@ const BottomNavbar = (props, ref) => {
   };
 
   /*
-  this function load theme state data from local storge 
+  this function load theme state data from local storge
   and pass the data to 'handleSwitchTheme' function to set the theme
    */
   const handleReadThemeState = () => {
@@ -66,7 +67,7 @@ const BottomNavbar = (props, ref) => {
     });
   };
   // End test
-
+  console.log(ref);
   return (
     <div className="nav-countainer">
       <nav className="nav-bar">
@@ -79,7 +80,10 @@ const BottomNavbar = (props, ref) => {
             </Link>
           </li>
           <Home />
-          <li className="nav-item">
+          <SwitchTheme
+            handleSwitchTheme={handleSwitchTheme}
+          />
+          {/* <li className="nav-item">
             <Link>
               <i
                 className={islight ? "uil uil-sun" : "uil uil-moon"}
@@ -88,7 +92,7 @@ const BottomNavbar = (props, ref) => {
               ></i>
               <span>DARK-LIGHT</span>
             </Link>
-          </li>
+          </li> */}
           <ScrollToTop />
         </ul>
       </nav>
