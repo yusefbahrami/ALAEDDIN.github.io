@@ -1,11 +1,11 @@
 import React, { forwardRef, useContext, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { ThemeContext } from "../Context/themeContext";
 import LinkToUser from "./bottom_navbar_sub_components/LinkToUserPanel";
 import Home from "./bottom_navbar_sub_components/ReturnToHome";
 import ScrollToTop from "./bottom_navbar_sub_components/ScrollToTop";
 import Swal from "sweetalert2";
 import SwitchTheme from "./bottom_navbar_sub_components/SwitchTheme";
+import Music from "./bottom_navbar_sub_components/Music";
 
 const BottomNavbar = (props, ref) => {
   const { islight, setIsLight } = useContext(ThemeContext);
@@ -66,24 +66,14 @@ const BottomNavbar = (props, ref) => {
       color: `${islight ? "#da0037" : "#42c2ff"}`,
     });
   };
-
-  const handleTest = async () => {
-    const battery=await navigator.locks
-    console.log(battery);
-  };
   // End test
-  console.log(ref);
+
   return (
     <div className="nav-countainer">
       <nav className="nav-bar">
         <ul>
           <LinkToUser />
-          <li className="nav-item" onClick={handleTest}>
-            <Link to="#">
-              <i className="uil uil-setting"></i>
-              <span>SETTING</span>
-            </Link>
-          </li>
+          <Music handleShowToast={handleShowToast}/>
           <Home />
           <SwitchTheme handleSwitchTheme={handleSwitchTheme} />
           <ScrollToTop />
