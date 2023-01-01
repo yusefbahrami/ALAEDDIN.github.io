@@ -1,4 +1,4 @@
-import React, { forwardRef, useContext } from "react";
+import React, { forwardRef, useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ThemeContext } from "../Context/themeContext";
 import LinkToUser from "./bottom_navbar_sub_components/LinkToUserPanel";
@@ -9,16 +9,30 @@ import Swal from "sweetalert2";
 const BottomNavbar = (props, ref) => {
   const { islight, setIsLight } = useContext(ThemeContext);
 
-  const handleSeitchTheme = () => {
-    setIsLight(!islight);
-    if (islight) {
+  const handleSwitchTheme = (state) => {
+    setIsLight(!state);
+    if (Boolean(state)) {
       document.body.className = "lightBody";
       ref.current.className = "main light";
     } else {
       document.body.className = "darkBody";
       ref.current.className = "main";
     }
+    localStorage.setItem("islight", JSON.stringify(islight));
   };
+
+  /*
+  this function load theme state data from local storge 
+  and pass the data to 'handleSwitchTheme' function to set the theme
+   */
+  const handleReadThemeState = () => {
+    const themeState = JSON.parse(localStorage.getItem("islight"));
+    handleSwitchTheme(themeState);
+  };
+
+  useEffect(() => {
+    handleReadThemeState();
+  }, []);
 
   // test swal2
   // const handleShowMessage = () => {
@@ -70,7 +84,7 @@ const BottomNavbar = (props, ref) => {
               <i
                 className={islight ? "uil uil-sun" : "uil uil-moon"}
                 id="dark-light"
-                onClick={handleSeitchTheme}
+                onClick={() => handleSwitchTheme(islight)}
               ></i>
               <span>DARK-LIGHT</span>
             </Link>
