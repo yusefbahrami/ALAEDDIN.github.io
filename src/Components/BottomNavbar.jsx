@@ -80,19 +80,7 @@ const BottomNavbar = (props, ref) => {
             </Link>
           </li>
           <Home />
-          <SwitchTheme
-            handleSwitchTheme={handleSwitchTheme}
-          />
-          {/* <li className="nav-item">
-            <Link>
-              <i
-                className={islight ? "uil uil-sun" : "uil uil-moon"}
-                id="dark-light"
-                onClick={() => handleSwitchTheme(islight)}
-              ></i>
-              <span>DARK-LIGHT</span>
-            </Link>
-          </li> */}
+          <SwitchTheme handleSwitchTheme={handleSwitchTheme} />
           <ScrollToTop />
         </ul>
       </nav>
