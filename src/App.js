@@ -5,7 +5,6 @@ import Content from "./Components/Content";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import { ThemeContext } from "./Context/themeContext";
-import Sound from "./assets/Sound/IntroSound.mp3"
 import "./Style/main_style.css";
 
 const App = () => {

@@ -6,7 +6,7 @@ const Music = () => {
     <li className="nav-item">
       <NavLink to={"/music-list"}>
         <i className="uil uil-headphones"></i>
-        <span>SETTING</span>
+        <span>Music</span>
       </NavLink>
     </li>
   );
