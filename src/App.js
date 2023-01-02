@@ -20,8 +20,6 @@ const App = () => {
           <Content />
           <Footer />
           <BottomNavbar ref={mainDiv} />
-          <audio autoPlay src={Sound}>
-          </audio>
         </main>
       </ThemeContext.Provider>
     </BrowserRouter>
