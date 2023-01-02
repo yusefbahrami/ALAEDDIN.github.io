@@ -19,7 +19,11 @@ const BottomNavbar = (props, ref) => {
       document.body.className = "darkBody";
       ref.current.className = "main";
     }
-    localStorage.setItem("islight", JSON.stringify(islight));
+    try {
+      localStorage.setItem("islight", JSON.stringify(islight));
+    } catch (error) {
+      localStorage.setItem("islight", JSON.stringify(false));
+    }
   };
 
   /*
@@ -73,7 +77,7 @@ const BottomNavbar = (props, ref) => {
       <nav className="nav-bar">
         <ul>
           <LinkToUser />
-          <Music handleShowToast={handleShowToast}/>
+          <Music handleShowToast={handleShowToast} />
           <Home />
           <SwitchTheme handleSwitchTheme={handleSwitchTheme} />
           <ScrollToTop />
