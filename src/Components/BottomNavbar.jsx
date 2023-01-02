@@ -5,7 +5,7 @@ import Home from "./bottom_navbar_sub_components/ReturnToHome";
 import ScrollToTop from "./bottom_navbar_sub_components/ScrollToTop";
 import Swal from "sweetalert2";
 import SwitchTheme from "./bottom_navbar_sub_components/SwitchTheme";
-import Music from "./bottom_navbar_sub_components/Music";
+import BackPage from "./bottom_navbar_sub_components/BackPage";
 
 const BottomNavbar = (props, ref) => {
   const { islight, setIsLight } = useContext(ThemeContext);
@@ -77,7 +77,7 @@ const BottomNavbar = (props, ref) => {
       <nav className="nav-bar">
         <ul>
           <LinkToUser />
-          <Music handleShowToast={handleShowToast} />
+          <BackPage />
           <Home />
           <SwitchTheme handleSwitchTheme={handleSwitchTheme} />
           <ScrollToTop />
