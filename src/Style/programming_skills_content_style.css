@@ -23,13 +23,13 @@
 }
 .skill-description {
   border-radius: 0.1rem;
-  box-shadow: 0 0 0.2rem #da0037;
+  border: 0.1rem solid #da0037;
   transition: box-shadow 0.3s;
   width: 100%;
   height: 20rem;
 }
 .skill-description:hover {
-  box-shadow: 0 0 0.5rem #da0037;
+  box-shadow: 0 0 0.2rem #da0037;
 }
 .skill-route {
   color: #ededed;
@@ -96,10 +96,10 @@
   color: #42c2ff;
 }
 .main.light .skill-description {
-  box-shadow: 0 0 0.2rem #42c2ff;
+  border: 0.1rem solid #42c2ff;
 }
 .main.light .skill-description:hover {
-  box-shadow: 0 0 0.5rem #42c2ff;
+  box-shadow: 0 0 0.2rem #42c2ff;
 }
 .main.light .skill-route,
 .main.light .skill-description-title .icon {
