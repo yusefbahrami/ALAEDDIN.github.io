@@ -29,7 +29,7 @@
   width: 40rem;
   height: 40rem;
   border-radius: 50%;
-  box-shadow: 0 0 2rem #da0037;
+  box-shadow: 0 0 0.3rem #da0037;
   transition: box-shadow 0.3s;
 }
 .header-countainer
@@ -37,7 +37,7 @@
   .profile-box-image
   .profile-image-route
   .profile-image:hover {
-  box-shadow: 0 0 2.8rem #da0037;
+  box-shadow: 0 0 0.5rem #da0037;
 }
 .header-countainer .profile-box .profile-box-description {
   width: 100%;
@@ -71,9 +71,7 @@
   .profile-box-description
   .profile-box-inner-description
   .profile-title {
-  /* font-size: 4rem; */
   font-size: 5.5rem;
-
   font-family: "Alexandria", sans-serif;
   font-weight: 200;
   color: #da0037;
@@ -86,7 +84,7 @@
   .profile-box-image
   .profile-image-route
   .profile-image {
-  box-shadow: 0 0 2rem #42c2ff;
+  box-shadow: 0 0 0.3rem #42c2ff;
 }
 .main.light
   .header-countainer
@@ -94,7 +92,7 @@
   .profile-box-image
   .profile-image-route
   .profile-image:hover {
-  box-shadow: 0 0 2.8rem #42c2ff;
+  box-shadow: 0 0 0.5rem #42c2ff;
 }
 .main.light
   .header-countainer
