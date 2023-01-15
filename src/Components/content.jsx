@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Error404 from "./Error/Error404";
-import Main from "./MainPageComponent";
+import Main from "./HomePage";
 
 const Content = () => {
   return (
