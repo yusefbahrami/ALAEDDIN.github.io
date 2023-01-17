@@ -6,19 +6,23 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import { ThemeContext } from "./Context/themeContext";
 import "./Style/main_style.css";
+import { UserTokenIdContext } from "./Context/UserTokenIdContext";
 
 const App = () => {
   const [islight, setIsLight] = useState(localStorage.getItem("islight"));
+  const UserTokenId = localStorage.getItem("UserTokenId");
   const mainDiv = useRef();
 
   return (
     <BrowserRouter>
       <ThemeContext.Provider value={{ islight, setIsLight }}>
         <main className="main" id="main" ref={mainDiv}>
-          <Header />
-          <Content />
-          <Footer />
-          <BottomNavbar ref={mainDiv} />
+          <UserTokenIdContext.Provider value={{ UserTokenId }}>
+            <Header />
+            <Content />
+            <Footer />
+            <BottomNavbar ref={mainDiv} />
+          </UserTokenIdContext.Provider>
         </main>
       </ThemeContext.Provider>
     </BrowserRouter>
