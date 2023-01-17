@@ -4,7 +4,6 @@ import userProfile from "../../assets/DarkProfile.jpg";
 import { UserTokenIdContext } from "../../Context/UserTokenIdContext";
 
 const LinkToUser = () => {
-  // const UserTokenId=localStorage.getItem("UserTokenId")
   const UserTokenId = useContext(UserTokenIdContext);
 
   return (
