@@ -23,8 +23,7 @@ const Header = () => {
           <div className="profile-box-inner-description">
             <h1 className="profile-title">ALAEDDIN</h1>
             <p className="profile-description">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id quis
-              commodi odit numquam nihil
+            ALAEDDIN's website
             </p>
           </div>
         </div>
