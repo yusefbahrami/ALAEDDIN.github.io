@@ -22,9 +22,7 @@ const Header = () => {
         <div className="profile-box-description">
           <div className="profile-box-inner-description">
             <h1 className="profile-title">ALAEDDIN</h1>
-            <p className="profile-description">
-            ALAEDDIN's website
-            </p>
+            <p className="profile-description">ALAEDDIN's website</p>
           </div>
         </div>
       </div>
