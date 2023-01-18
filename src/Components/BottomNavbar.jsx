@@ -12,7 +12,7 @@ const BottomNavbar = (props, ref) => {
 
   const handleSwitchTheme = (state) => {
     setIsLight(!state);
-    if (Boolean(state)) {
+    if (state) {
       document.body.className = "lightBody";
       ref.current.className = "main light";
     } else {
@@ -32,7 +32,11 @@ const BottomNavbar = (props, ref) => {
    */
   const handleReadThemeState = () => {
     const themeState = JSON.parse(localStorage.getItem("islight"));
-    handleSwitchTheme(themeState);
+    if (String(themeState).includes("false")) {
+      handleSwitchTheme(false);
+    } else {
+      handleSwitchTheme(true);
+    }
   };
 
   useEffect(() => {
