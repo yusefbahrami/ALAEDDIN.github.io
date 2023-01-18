@@ -76,7 +76,7 @@ body {
 }
 /* main light */
 .main.light {
-  background: linear-gradient(rgba(68, 68, 68, 20%), rgba(239, 255, 253, 100%)),
+  background: linear-gradient(rgba(184, 255, 249,20%), rgba(239, 255, 253, 100%)),
     url("../assets/LightProfile.jpg") center center/cover fixed;
 }
 /* end main light */
