@@ -1,0 +1,15 @@
+.submit-button{
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2rem;
+    font-family: "Alexandria", sans-serif;
+    font-weight: 300;
+    color: #ededed;
+    background-color: #da0037;
+    border-style: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.submit-button:hover{
+    color: #171717;
+}
