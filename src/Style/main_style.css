@@ -5,6 +5,7 @@
 @import url("./footer_countainer.css");
 @import url("./error404.css");
 @import url("./swal2_style.css");
+@import url('./login_sigin_form_style/login_form_style.css');
 
 * {
   margin: 0;
@@ -76,7 +77,10 @@ body {
 }
 /* main light */
 .main.light {
-  background: linear-gradient(rgba(184, 255, 249,20%), rgba(239, 255, 253, 100%)),
+  background: linear-gradient(
+      rgba(184, 255, 249, 20%),
+      rgba(239, 255, 253, 100%)
+    ),
     url("../assets/LightProfile.jpg") center center/cover fixed;
 }
 /* end main light */
