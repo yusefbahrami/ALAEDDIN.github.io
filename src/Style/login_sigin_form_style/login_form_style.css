@@ -3,8 +3,7 @@
 @import url("./login_signin_form_subcomponents_style/submint_button_style.css");
 @import url("./login_signin_form_subcomponents_style/from_title_style.css");
 .login-countainer {
-  width: 50%;
-  max-width: 800px;
+  width: 500px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -43,4 +42,20 @@
 .main.light .link-to-signin a {
   color: #42c2ff;
   border-color: #42c2ff;
+}
+
+@media screen and (max-width: 500px) {
+  .login-countainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 435px) {
+  .link-to-signin {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .link-to-signin {
+    font-size: 0.8rem;
+  }
 }
