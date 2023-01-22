@@ -53,6 +53,9 @@
   .link-to-signin {
     font-size: 1rem;
   }
+  .form-input {
+    font-size: 1rem;
+  }
 }
 @media screen and (max-width: 375px) {
   .link-to-signin {
