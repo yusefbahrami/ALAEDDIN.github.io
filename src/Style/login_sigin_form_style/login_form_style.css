@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
-@import url('./login_signin_form_subcomponents_style/form_input_style.css');
-@import url('./login_signin_form_subcomponents_style/submint_button_style.css');
-@import url('./login_signin_form_subcomponents_style/from_title_style.css');
+@import url("./login_signin_form_subcomponents_style/form_input_style.css");
+@import url("./login_signin_form_subcomponents_style/submint_button_style.css");
+@import url("./login_signin_form_subcomponents_style/from_title_style.css");
 .login-countainer {
   width: 50%;
   max-width: 800px;
@@ -18,13 +18,21 @@
   justify-content: center;
   gap: 1rem;
 }
-
+.email-error-label {
+  color: #da0037;
+  font-family: "Alexandria", sans-serif;
+  font-weight: 200;
+  align-self: flex-start;
+}
 .link-to-signin {
   align-self: center;
-  text-decoration: none;
-  border-bottom: 1px solid #da0037;
-  color: #da0037;
+  color: #ededed;
   font-size: 1.2rem;
   font-family: "Alexandria", sans-serif;
   font-weight: 300;
+}
+.link-to-signin a {
+  text-decoration: none;
+  color: #da0037;
+  border-bottom: 1px solid #da0037;
 }
