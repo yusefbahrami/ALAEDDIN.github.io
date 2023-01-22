@@ -13,3 +13,12 @@
 .submit-button:hover{
     color: #171717;
 }
+
+/* light */
+.main.light .submit-button{
+    color: #effffd;
+    background-color: #42c2ff;
+}
+.main.light .submit-button:hover{
+    color: #b8fff9;
+}

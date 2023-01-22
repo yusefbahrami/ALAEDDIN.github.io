@@ -12,3 +12,12 @@
   border-style: none;
   border-bottom: 1px solid #444444;
 }
+
+/* light */
+.main.light .form-input {
+  color: #42c2ff;
+  border-color: #42c2ff;
+}
+.main.light .form-input::placeholder {
+  color: #42c2ff;
+}

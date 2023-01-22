@@ -4,3 +4,8 @@
   font-family: "Alexandria", sans-serif;
   font-weight: 300;
 }
+
+/* light */
+.main.light .from-title{
+  color: #42c2ff;
+}

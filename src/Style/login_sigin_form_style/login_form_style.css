@@ -36,3 +36,11 @@
   color: #da0037;
   border-bottom: 1px solid #da0037;
 }
+
+/* light */
+.main.light .email-error-label,
+.main.light .link-to-signin,
+.main.light .link-to-signin a {
+  color: #42c2ff;
+  border-color: #42c2ff;
+}
