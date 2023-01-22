@@ -25,12 +25,12 @@ const LoginPanel = () => {
       <form onSubmit={validateEmail}>
         <EmailInput ref={EmailInputRef} />
         <span className="email-error-label">{emailError}</span>
-        <PasswordInput />
+        <PasswordInput text={"Password"} />
         <SubmitButton text={"Login"} />
       </form>
       <span className="link-to-signup">
         Not registered yet?
-        <NavLink to="/signin"> Create an Account</NavLink>
+        <NavLink to="/signup"> Create an Account</NavLink>
       </span>
     </div>
   );
