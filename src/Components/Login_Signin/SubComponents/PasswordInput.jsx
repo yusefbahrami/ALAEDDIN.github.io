@@ -1,6 +1,6 @@
 import React from 'react'
 
 const PasswordInput=()=>{
-    return(<input type={'password'} placeholder='Password' className='form-input password-input'/>)
+    return(<input type={'password'} placeholder='Password' className='form-input password-input' required/>)
 }
 export default PasswordInput
