@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Error404 from "./Error/Error404";
 import Main from "./HomePage";
 import UserPanel from "./UserPanel/UserPanel";
-import LoginPanel from "./Login_Signin/LoginPanel";
+import LoginPanel from "./Login_Signup/LoginPanel";
 
 const Content = () => {
   return (

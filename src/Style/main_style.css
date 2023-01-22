@@ -5,7 +5,7 @@
 @import url("./footer_countainer.css");
 @import url("./error404.css");
 @import url("./swal2_style.css");
-@import url('./login_sigin_form_style/login_form_style.css');
+@import url('./login_signup_form_style/login_form_style.css');
 
 * {
   margin: 0;

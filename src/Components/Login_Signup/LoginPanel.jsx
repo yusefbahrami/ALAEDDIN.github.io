@@ -14,7 +14,7 @@ const LoginPanel = () => {
     var email = EmailInputRef.current.value;
     console.log(EmailInputRef.current.value);
     if (validator.isEmail(email)) {
-      setEmailError("");
+      setEmailError("OK!");
     } else {
       setEmailError("The Email Invalid!");
     }
@@ -28,7 +28,7 @@ const LoginPanel = () => {
         <PasswordInput />
         <SubmitButton text={"Login"} />
       </form>
-      <span className="link-to-signin">
+      <span className="link-to-signup">
         Not registered yet?
         <NavLink to="/signin"> Create an Account</NavLink>
       </span>

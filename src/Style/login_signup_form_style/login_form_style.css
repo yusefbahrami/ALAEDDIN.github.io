@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,500&display=swap");
-@import url("./login_signin_form_subcomponents_style/form_input_style.css");
-@import url("./login_signin_form_subcomponents_style/submint_button_style.css");
-@import url("./login_signin_form_subcomponents_style/from_title_style.css");
+@import url("./login_signup_form_subcomponents_style/form_input_style.css");
+@import url("./login_signup_form_subcomponents_style/submit_button_style.css");
+@import url("./login_signup_form_subcomponents_style/from_title_style.css");
 .login-countainer {
   width: 500px;
   padding: 1rem;
@@ -23,14 +23,14 @@
   font-weight: 200;
   align-self: flex-start;
 }
-.link-to-signin {
+.link-to-signup {
   align-self: center;
   color: #ededed;
   font-size: 1.2rem;
   font-family: "Alexandria", sans-serif;
   font-weight: 300;
 }
-.link-to-signin a {
+.link-to-signup a {
   text-decoration: none;
   color: #da0037;
   border-bottom: 1px solid #da0037;
@@ -38,8 +38,8 @@
 
 /* light */
 .main.light .email-error-label,
-.main.light .link-to-signin,
-.main.light .link-to-signin a {
+.main.light .link-to-signup,
+.main.light .link-to-signup a {
   color: #42c2ff;
   border-color: #42c2ff;
 }
@@ -50,7 +50,7 @@
   }
 }
 @media screen and (max-width: 435px) {
-  .link-to-signin {
+  .link-to-signup {
     font-size: 1rem;
   }
   .form-input {
@@ -58,7 +58,7 @@
   }
 }
 @media screen and (max-width: 375px) {
-  .link-to-signin {
+  .link-to-signup {
     font-size: 0.8rem;
   }
 }
