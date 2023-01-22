@@ -2,7 +2,7 @@
 @import url("./login_signup_form_subcomponents_style/form_input_style.css");
 @import url("./login_signup_form_subcomponents_style/submit_button_style.css");
 @import url("./login_signup_form_subcomponents_style/from_title_style.css");
-.login-countainer {
+.login-signup-countainer {
   width: 500px;
   padding: 1rem;
   display: flex;
@@ -10,14 +10,14 @@
   justify-content: center;
   gap: 1.5rem;
 }
-.login-countainer form {
+.login-signup-countainer form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
-.email-error-label {
+.error {
   color: #da0037;
   font-family: "Alexandria", sans-serif;
   font-weight: 200;
@@ -37,7 +37,7 @@
 }
 
 /* light */
-.main.light .email-error-label,
+.main.light .error,
 .main.light .link-to-signup,
 .main.light .link-to-signup a {
   color: #42c2ff;
@@ -45,7 +45,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .login-countainer {
+  .login-signup-countainer {
     width: 100%;
   }
 }
