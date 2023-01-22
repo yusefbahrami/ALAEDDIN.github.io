@@ -4,6 +4,7 @@ import Error404 from "./Error/Error404";
 import Main from "./HomePage";
 import UserPanel from "./UserPanel/UserPanel";
 import LoginPanel from "./Login_Signup/LoginPanel";
+import SignupPanel from "./Login_Signup/SignupPanel";
 
 const Content = () => {
   return (
@@ -13,6 +14,7 @@ const Content = () => {
         <Route path="/" element={<Main />} />
         <Route path="/user/:id" element={<UserPanel />} />
         <Route path="/login" element={<LoginPanel />} />
+        <Route path="/signup" element={<SignupPanel />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </div>
