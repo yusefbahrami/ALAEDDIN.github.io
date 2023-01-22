@@ -8,17 +8,27 @@ import validator from "validator";
 
 const SignupPanel = () => {
   const EmailInputRef = createRef();
-  const PasswordValue = createRef();
-  const RepeatPasswordValue = createRef();
+  const PasswordValueRef = createRef();
+  const RepeatPasswordValueRef = createRef();
   const [emailError, setEmailError] = useState("");
+  const [PasswordError, setPasswordError] = useState("");
   const validateEmail = (e) => {
     e.preventDefault();
     var email = EmailInputRef.current.value;
-    console.log(EmailInputRef.current.value);
     if (validator.isEmail(email)) {
       setEmailError("OK!");
+      cheackPassword();
     } else {
       setEmailError("The Email Invalid!");
+    }
+  };
+  const cheackPassword = () => {
+    if (
+      PasswordValueRef.current.value === RepeatPasswordValueRef.current.value
+    ) {
+      setPasswordError("OK!");
+    } else {
+      setPasswordError("The Entered Passwords Are Not The Same!");
     }
   };
   return (
@@ -26,9 +36,10 @@ const SignupPanel = () => {
       <FormTitle title={"Signup"} />
       <form onSubmit={validateEmail}>
         <EmailInput ref={EmailInputRef} />
-        <span className="email-error-label">{emailError}</span>
-        <PasswordInput text={"Password"}/>
-        <PasswordInput text={"repeat Password"}/>
+        <span className="error email-error-label">{emailError}</span>
+        <PasswordInput ref={PasswordValueRef} text={"Password"} />
+        <PasswordInput ref={RepeatPasswordValueRef} text={"repeat Password"} />
+        <span className="error password-error-label">{PasswordError}</span>
         <SubmitButton text={"Signup"} />
       </form>
       <span className="link-to-signup">

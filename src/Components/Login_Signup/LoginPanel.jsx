@@ -19,7 +19,7 @@ const LoginPanel = () => {
     }
   };
   return (
-    <div className="login-countainer">
+    <div className="login-signup-countainer">
       <FormTitle title={"Login"} />
       <form onSubmit={validateEmail}>
         <EmailInput ref={EmailInputRef} />
