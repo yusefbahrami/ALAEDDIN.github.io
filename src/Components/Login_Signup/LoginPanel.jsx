@@ -12,7 +12,6 @@ const LoginPanel = () => {
   const validateEmail = (e) => {
     e.preventDefault();
     var email = EmailInputRef.current.value;
-    console.log(EmailInputRef.current.value);
     if (validator.isEmail(email)) {
       setEmailError("OK!");
     } else {
@@ -24,7 +23,7 @@ const LoginPanel = () => {
       <FormTitle title={"Login"} />
       <form onSubmit={validateEmail}>
         <EmailInput ref={EmailInputRef} />
-        <span className="email-error-label">{emailError}</span>
+        <span className="error email-error-label">{emailError}</span>
         <PasswordInput text={"Password"} />
         <SubmitButton text={"Login"} />
       </form>
