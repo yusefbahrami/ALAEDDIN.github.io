@@ -1,6 +1,4 @@
 import React, { createRef, useState } from "react";
-import EmailInput from "./SubComponents/EmailInput";
-import PasswordInput from "./SubComponents/PasswordInput";
 import FormTitle from "./SubComponents/FormTitle";
 import { NavLink } from "react-router-dom";
 import SubmitButton from "./SubComponents/SubmitButton";
@@ -9,6 +7,7 @@ import FormInput from "./SubComponents/FormInput";
 
 const LoginPanel = () => {
   const EmailInputRef = createRef();
+  const PasswordValueRef = createRef();
   const [emailError, setEmailError] = useState("");
   const validateEmail = (e) => {
     e.preventDefault();
@@ -34,7 +33,7 @@ const LoginPanel = () => {
           type={"password"}
           placeholder={"password"}
           specialClassname={"password-input"}
-          ref={EmailInputRef}
+          ref={PasswordValueRef}
         />
         <SubmitButton text={"Login"} />
       </form>

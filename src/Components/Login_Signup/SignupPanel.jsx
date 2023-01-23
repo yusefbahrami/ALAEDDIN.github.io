@@ -1,10 +1,9 @@
 import React, { createRef, useState } from "react";
 import FormTitle from "./SubComponents/FormTitle";
-import EmailInput from "./SubComponents/EmailInput";
-import PasswordInput from "./SubComponents/PasswordInput";
 import SubmitButton from "./SubComponents/SubmitButton";
 import { NavLink } from "react-router-dom";
 import validator from "validator";
+import FormInput from "./SubComponents/FormInput";
 
 const SignupPanel = () => {
   const EmailInputRef = createRef();
@@ -35,10 +34,25 @@ const SignupPanel = () => {
     <div className="login-signup-countainer">
       <FormTitle title={"Signup"} />
       <form onSubmit={validateEmail}>
-        <EmailInput ref={EmailInputRef} />
+        <FormInput
+          type={"email"}
+          placeholder={"example@email.com"}
+          specialClassname={"Email-input"}
+          ref={EmailInputRef}
+        />
         <span className="error email-error-label">{emailError}</span>
-        <PasswordInput ref={PasswordValueRef} text={"Password"} />
-        <PasswordInput ref={RepeatPasswordValueRef} text={"repeat Password"} />
+        <FormInput
+          type={"password"}
+          placeholder={"password"}
+          specialClassname={"password-input"}
+          ref={PasswordValueRef}
+        />
+        <FormInput
+          type={"password"}
+          placeholder={"password"}
+          specialClassname={"password-input"}
+          ref={RepeatPasswordValueRef}
+        />
         <span className="error password-error-label">{PasswordError}</span>
         <SubmitButton text={"Signup"} />
       </form>
