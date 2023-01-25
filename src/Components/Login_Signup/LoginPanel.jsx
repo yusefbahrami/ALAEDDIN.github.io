@@ -41,6 +41,10 @@ const LoginPanel = () => {
         Not registered yet?
         <NavLink to="/signup"> Create an Account</NavLink>
       </span>
+      <span className="link-to-reset-password">
+        Have you forgotten your password?
+        <NavLink to="/reset-password"> Reset Password</NavLink>
+      </span>
     </div>
   );
 };
