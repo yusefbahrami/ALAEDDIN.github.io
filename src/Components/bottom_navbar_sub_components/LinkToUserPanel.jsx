@@ -15,8 +15,11 @@ const LinkToUser = () => {
             : "/login"
         }
       >
-        {/* <i className="uil uil-user"></i> */}
-        <img className="user-profile" src={userProfile} alt="Profile" />
+        {UserTokenId ? (
+          <i className="uil uil-user"></i>
+        ) : (
+          <img className="user-profile" src={userProfile} alt="Profile" />
+        )}
         <span>USER</span>
       </Link>
     </li>
