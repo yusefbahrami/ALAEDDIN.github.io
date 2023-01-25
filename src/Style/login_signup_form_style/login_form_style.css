@@ -30,7 +30,15 @@
   font-family: "Alexandria", sans-serif;
   font-weight: 300;
 }
-.link-to-signup a {
+.link-to-reset-password {
+  align-self: center;
+  color: #ededed;
+  font-size: 1rem;
+  font-family: "Alexandria", sans-serif;
+  font-weight: 300;
+}
+.link-to-signup a,
+.link-to-reset-password a {
   text-decoration: none;
   color: #da0037;
   border-bottom: 1px solid #da0037;
@@ -39,7 +47,9 @@
 /* light */
 .main.light .error,
 .main.light .link-to-signup,
-.main.light .link-to-signup a {
+.main.light .link-to-reset-password,
+.main.light .link-to-signup a,
+.main.light .link-to-reset-password a {
   color: #42c2ff;
   border-color: #42c2ff;
 }
@@ -47,6 +57,9 @@
 @media screen and (max-width: 500px) {
   .login-signup-countainer {
     width: 100%;
+  }
+  .link-to-reset-password {
+    font-size: 0.8rem;
   }
 }
 @media screen and (max-width: 435px) {
@@ -56,9 +69,15 @@
   .form-input {
     font-size: 1rem;
   }
+  .link-to-reset-password {
+    font-size: 0.7rem;
+  }
 }
 @media screen and (max-width: 375px) {
   .link-to-signup {
     font-size: 0.8rem;
+  }
+  .link-to-reset-password {
+    font-size: 0.6rem;
   }
 }
